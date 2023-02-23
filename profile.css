@@ -1,0 +1,41 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman' , sans-serif;    
+}
+
+#pembuka {
+  margin: 0px;
+  padding: 40px;
+}
+
+.p-1 {
+  padding-bottom: 20px;
+}
+
+.p-2 {
+  padding-bottom: 30px;
+}
+
+footer {
+  background: white;
+  padding: 20px;
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.footer {
+  display: flex;
+}
+
+.footer-paragraf {
+  margin-left: auto;
+}
+
+

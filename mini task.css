@@ -1,0 +1,165 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans' , sans-serif;    
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    padding: 14px 24px;
+    background-color: white;
+}
+
+.header-wrapper > .logo {
+    width: 40px;
+    height: 80px;
+}  
+
+.wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.wrapper > .menu {
+    display: flex;
+}
+
+.wrapper > .menu > button {
+    background-color: white;
+    padding: 8px 8px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: 0.3s background-color ease-out;
+}
+
+.wrapper > .menu > #home {
+  border-radius: 4px 0 0 4px;
+}
+
+#our-profile {
+  
+} 
+
+.hero {
+  display: flex;
+    
+    flex-direction: column;
+    padding-right: 120px;
+    padding-left: 120px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: 1px solid black;
+}
+
+.hero-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  margin-bottom: 20px;
+}
+
+.headquarter {
+  display: flex;
+    
+    flex-direction: column;
+    padding-right: 120px;
+    padding-left: 120px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    border: 1px solid black;
+}
+
+.headquarter-title {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.headquarter-gallery {
+  display: flex;
+  padding-left: 30px;
+  gap: 60px;
+  margin-top: 30px;
+}
+
+#form {
+  display: flex;
+    
+    flex-direction: row;
+    padding-right: 120px;
+    padding-left: 120px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    border: 1px solid black;
+}
+
+#form-isi {
+  float: left;
+}
+
+.message-us {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+input [type=text], input [type=birth-date], input [type=gender] {
+  width: 100%;
+  padding: 12px 20px;
+  margin 8px 0;
+  display: inline-block;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.radio {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+#hasil-form {
+  margin-left: 400px;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  float: right;
+  border: 1px solid black;
+}
+
+footer {
+  background: white;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.footer {
+  border-box: 1px solid black;
+  display: flex;
+}
+
+.footer-paragraf {
+  margin-left: auto;
+}
+
+/* footer */
+
+

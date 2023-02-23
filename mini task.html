@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--- header --->
+    <meta charset="utf-8">
+    <title>Mini Task RevoU Software Engineering</title>
+    <link rel="stylesheet" href="mini task.css">
+    <header style="background-color: white">
+</head>
+
+<body>
+  <!-- header/ navbar -->
+  <header style="background-color: white">
+    <nav class="header-wrapper">
+      <div class="logo"><img src='https://assets.website-files.com/61af164800e38c4f53c60b4e/61af164800e38c11efc60b6d_RevoU.svg'></div>
+        <nav class="wrapper">
+          <div class="menu">
+            <button id="#home">Home</button>
+            <button id onclick="#our-profile='profile.css'" target="_blank">Our Profile</button>
+            <button id="#portofolio">Portofolio</button>
+            <button id="#message-us">Message us</button>
+          </div>
+        </nav>
+       </div>
+     </nav>
+   </header>
+  
+      <!--- content --->
+    <main>
+      <!--- hero --->
+      <section id="hero">
+        <div class="container">
+          <div class="hero">
+            <h1 class="hero-title">Hi <span id="nama"></span>, Welcome to Website</h1>
+            
+           <script>
+            var nama = prompt ("Masukkan nama kamu");
+            document.getElementById("nama").innerText = name;
+            </script>
+            
+            <p class="hero-subtitle">Ini adalah website latihan pertama</p> 
+            <img src="https://placekitten.com/1366/578" alt="hero image" />
+          </div>
+        </div>
+        <hr class="hero-line"  />
+      </section>
+      
+      <section id="headquarter">
+        <div class="container">
+          <div class="headquarter">
+            <h1 class="headquarter-title">Our Headquarter</h1>
+            <div class="headquarter-gallery">
+              <div class= "city">
+                <img src="https://placekitten.com/200/200" alt=""/>
+                <h3>Jakarta</h3>
+              </div>
+              <div class= "city">
+                <img src="https://placekitten.com/200/200" alt=""/>
+                <h3>Bandung</h3>
+              </div>
+              <div class= "city">
+                <img src="https://placekitten.com/200/200" alt=""/>
+                <h3>Surabaya</h3>
+              </div>
+            </div> 
+          </div> 
+        </div>
+      </section>
+      
+      
+      <section id="form">
+      <div class= "form-section">
+        <form name="message-form" onsubmit="return validateForm()">
+        <div id="form-isi">
+       <h1 class="message-us">Message Us</h1>
+       <form>
+         <label>Nama:</label>
+      <input type="text" name="full-name" class="form-section" placehorder="Nama">
+      <br/>
+      
+      <label>Tanggal Lahir:</label>
+      <input type="date" name="birth-date" class="form-section" />
+      <br/>
+      
+      <label>Jenis Kelamin:</label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Laki-laki</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Perempuan</label>
+      <br />
+      
+      Pesan: 
+      <textarea placehorder="Pesan" name="messages"></textarea>
+      <br />
+      
+      <input type="submit" value="Submit" />
+    </form>
+      <script>
+        function validateForm() {
+          var name = document.forms["message-form"]["full-name"].value;
+          var date = document.forms["message-form"]["birth-date"].value;
+          var gender = document.forms["message-form"]["gender"].value;
+          var messages = document.forms["message-form"]["messages"].value;
+          
+          document.getElementById("sender-full-name").innerText = name;
+          document.getElementById("sender-birth-date").innerText = date;
+          document.getElementById("sender-gender).innerText = gender;
+          document.getElementById("sender-messages").innerText = messages;
+          return false;
+        }
+    </div>
+    
+    <div id="hasil-form">
+    <div class="form-output">
+      <p>Nama: Luthfika Rahmawati R<span id="sender-full-name"></span></p>
+      <p>Tanggal Lahir: 08/10/1999<span id="sender-birth-date"></span></p>
+      <p>Jenis Kelamin: Perempuan<span id="sender-gender"></span></p>
+      <p>Pesan: Bismillah belajar buat web<span id="sender-messages"></span></p>
+    </div>
+    </div>
+    </main>
+    
+  
+  
+    <!--- footer --->
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <p class="footer-paragraf">Revou</p>
+        </div>
+      </div>
+     </footer>
+      
+     </body>
+        
+     
+
+</html>
